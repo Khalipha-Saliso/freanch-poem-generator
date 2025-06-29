@@ -1,0 +1,111 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to right, #f8e8e8, #fcefcf);
+    color: #3e3e3e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .site-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe5ec;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .site-header h1 {
+    font-size: 2.5rem;
+    color: #b5179e;
+  }
+  
+  /* Main content */
+  .main-content {
+    flex: 1;
+    max-width: 700px;
+    margin: 30px auto;
+    background: #fff9f5;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styling */
+  #poem-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  #topic-input {
+    padding: 12px 18px;
+    border: 2px solid #ffcad4;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  #topic-input:focus {
+    border-color: #ff7aa2;
+    outline: none;
+    background-color: #fff0f5;
+  }
+  
+  input[type="submit"] {
+    background-color: #ff7aa2;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ff4d6d;
+  }
+  
+  /* Poem output */
+  #poem-output {
+    background-color: #fff3f3;
+    border-left: 4px solid #ff7aa2;
+    padding: 20px;
+    border-radius: 8px;
+    font-style: italic;
+    color: #444;
+  }
+  
+  #poem-output p {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  .site-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .site-footer a {
+    color: #b5179e;
+    text-decoration: none;
+  }
+  
+  .site-footer a:hover {
+    text-decoration: underline;
+  }
+  
